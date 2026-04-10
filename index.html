@@ -2004,6 +2004,25 @@
 
     <!-- ════════ PROJECTS ════════ -->
     <section id="projects">
+        <style>
+            .anim-fade { position: relative; width: 100%; height: 100%; }
+            .anim-fade img { position: absolute; top:0; left:0; width: 100%; height: 100%; object-fit: cover; opacity: 0; border-radius: 12px; }
+            .anim-fade2 img:nth-child(1) { animation: f2 10s infinite; }
+            .anim-fade2 img:nth-child(2) { animation: f2 10s infinite 5s; }
+            @keyframes f2 {
+                0%, 40% { opacity: 1; }
+                50%, 90% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .anim-fade3 img:nth-child(1) { animation: f3 15s infinite; }
+            .anim-fade3 img:nth-child(2) { animation: f3 15s infinite 5s; }
+            .anim-fade3 img:nth-child(3) { animation: f3 15s infinite 10s; }
+            @keyframes f3 {
+                0%, 25% { opacity: 1; }
+                33.33%, 91.66% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+        </style>
         <div class="sec-head">
             <div class="sec-tag">05 &mdash; Projects</div>
             <h2 class="sec-title">Featured <span>Work</span></h2>
@@ -2013,38 +2032,13 @@
             <div class="proj p1 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">01 / 05</div>
-                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--red)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🏆</div>
-                        <div class="proj-title">CodeX Leaderboard</div>
-                        <div class="proj-tags"><span class="ptag" style="color:var(--red);border-color:var(--red)">Node.js</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Prisma</span><span class="ptag" style="color:#aaa;border-color:#aaa">AI</span></div>
-                    </div>
-                    <div class="proj-bk">
-                        <div class="proj-desc">Live contest coding platform with AI support. Uses multithreaded architecture for crawling data.</div>
-                        <a href="https://github.com/shivam543210/Leader-board" class="proj-link" target="_blank">View GitHub &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj p2 up">
-                <div class="proj-inner">
-                    <div class="proj-f">
-                        <div class="proj-num">02 / 05</div>
-                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--orange)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">✏️</div>
-                        <div class="proj-title">Scribble Backend</div>
-                        <div class="proj-tags"><span class="ptag" style="color:var(--orange);border-color:var(--orange)">Socket.IO</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Real-Time</span></div>
-                    </div>
-                    <div class="proj-bk">
-                        <div class="proj-desc">Backend for a real-time multiplayer drawing game built with Express, Node, and PostgreSQL. Highly optimized queries.</div>
-                        <a href="https://github.com/shivam543210/scribble" class="proj-link" target="_blank">View GitHub &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj p3 up">
-                <div class="proj-inner">
-                    <div class="proj-f">
-                        <div class="proj-num">03 / 05</div>
-                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--green)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🏥</div>
+                        <div class="proj-num">01 / 06</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--green)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                            <div class="anim-fade anim-fade2">
+                                <img src="swastonix.png" alt="Swastikonix" loading="lazy">
+                                <img src="swastonix2.png" alt="Swastikonix" loading="lazy">
+                            </div>
+                        </div>
                         <div class="proj-title">Swastikonix</div>
                         <div class="proj-tags"><span class="ptag" style="color:var(--green);border-color:var(--green)">Full Stack</span><span class="ptag" style="color:var(--blue);border-color:var(--blue)">Healthcare</span></div>
                     </div>
@@ -2055,11 +2049,13 @@
                 </div>
             </div>
 
-            <div class="proj p7 up">
+            <div class="proj p2 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">04 / 05</div>
-                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, #00c8aa); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🏨</div>
+                        <div class="proj-num">02 / 06</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, #00c8aa); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                            <img src="medzillo.png" alt="Medzillo HMS" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                        </div>
                         <div class="proj-title">Medzillo HMS</div>
                         <div class="proj-tags"><span class="ptag" style="color:#00c8aa;border-color:#00c8aa">Node.js</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">MongoDB</span><span class="ptag" style="color:var(--blue);border-color:var(--blue)">Healthcare</span></div>
                     </div>
@@ -2070,17 +2066,75 @@
                 </div>
             </div>
 
-            <div class="proj p8 up">
+            <div class="proj p3 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">05 / 05</div>
-                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, #9b59b6); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🚀</div>
+                        <div class="proj-num">03 / 06</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, #9b59b6); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                            <img src="nf3pro.png" alt="NF3Pro" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                        </div>
                         <div class="proj-title">NF3Pro</div>
                         <div class="proj-tags"><span class="ptag" style="color:#9b59b6;border-color:#9b59b6">Full Stack</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Platform</span></div>
                     </div>
                     <div class="proj-bk">
                         <div class="proj-desc">Professional platform with scalable backend infrastructure, optimized API design, and seamless user experience.</div>
                         <a href="https://nf3pro.com" class="proj-link" target="_blank">View Live &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj p4 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">04 / 06</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, #e91e63); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                            <div class="anim-fade anim-fade2">
+                                <img src="linkup.png" alt="Link-Up" loading="lazy">
+                                <img src="linkup2.png" alt="Link-Up" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="proj-title">Link-Up</div>
+                        <div class="proj-tags"><span class="ptag" style="color:#e91e63;border-color:#e91e63">Frontend</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Vercel</span></div>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">A modern and intuitive link platform allowing users to seamlessly connect and share resources.</div>
+                        <a href="https://link-up24.vercel.app/" class="proj-link" target="_blank">View Live &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj p5 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">05 / 06</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--red)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem; overflow:hidden;">🏆</div>
+                        <div class="proj-title">CodeX Leaderboard</div>
+                        <div class="proj-tags"><span class="ptag" style="color:var(--red);border-color:var(--red)">Node.js</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Prisma</span><span class="ptag" style="color:#aaa;border-color:#aaa">AI</span></div>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">Live contest coding platform with AI support. Uses multithreaded architecture for crawling data.</div>
+                        <a href="https://github.com/shivam543210/Leader-board" class="proj-link" target="_blank">View GitHub &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj p6 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">06 / 06</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--orange)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                            <div class="anim-fade anim-fade3">
+                                <img src="scribble.png" alt="Scribble Backend" loading="lazy">
+                                <img src="scribble2.png" alt="Scribble Backend" loading="lazy">
+                                <img src="scribble3.png" alt="Scribble Backend" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="proj-title">Scribble Backend</div>
+                        <div class="proj-tags"><span class="ptag" style="color:var(--orange);border-color:var(--orange)">Socket.IO</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Real-Time</span></div>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">Backend for a real-time multiplayer drawing game built with Express, Node, and PostgreSQL. Highly optimized queries.</div>
+                        <a href="https://github.com/shivam543210/scribble" class="proj-link" target="_blank">View GitHub &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -2169,7 +2223,7 @@
         let mx = 0, my = 0, cx = 0, cy = 0;
         document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
         (function moveCursor() {
-            cx += (mx - cx) * .14; cy += (my - cy) * .14;
+            cx += (mx - cx) * .45; cy += (my - cy) * .45;
             cur.style.left = cx + 'px'; cur.style.top = cy + 'px';
             curDot.style.left = mx + 'px'; curDot.style.top = my + 'px';
             requestAnimationFrame(moveCursor);
