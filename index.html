@@ -1131,6 +1131,130 @@
             border-top: 3px solid #aaa
         }
 
+        .p7 .proj-f {
+            border-top: 3px solid #00c8aa
+        }
+
+        .p8 .proj-f {
+            border-top: 3px solid #9b59b6
+        }
+
+        /* ── FREELANCE ── */
+        #freelance {
+            background: var(--bg2);
+        }
+
+        .freelance-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .fl-card {
+            background: rgba(255,255,255,.025);
+            border-radius: 20px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform .35s, box-shadow .35s;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fl-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.45);
+        }
+
+        .fl-img-wrap {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .fl-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s ease;
+        }
+
+        .fl-card:hover .fl-img-wrap img {
+            transform: scale(1.07);
+        }
+
+        .fl-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(8,8,15,0.7) 0%, transparent 60%);
+        }
+
+        .fl-body {
+            padding: 22px 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fl-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .fl-desc {
+            font-size: .88rem;
+            color: var(--dim);
+            line-height: 1.65;
+            flex: 1;
+        }
+
+        .fl-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            color: var(--yellow);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: .9rem;
+            margin-top: 4px;
+            transition: gap .2s;
+        }
+
+        .fl-link:hover { gap: 12px; }
+
+        .fl-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(255,213,0,0.15);
+            border: 1px solid rgba(255,213,0,0.35);
+            color: var(--yellow);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 100px;
+        }
+
+        @media(max-width:1100px) {
+            .freelance-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:680px) {
+            .freelance-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* ── CONTACT ── */
         #contact {
             background: var(--bg2);
@@ -1557,6 +1681,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#freelance">Freelance</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -1819,11 +1944,68 @@
         <div class="pip"></div>
         <div class="pip"></div>
     </div>
+    <!-- ════════ FREELANCE ════════ -->
+    <section id="freelance">
+        <div class="sec-head">
+            <div class="sec-tag">04 &mdash; Freelance</div>
+            <h2 class="sec-title">Freelance <span>Work</span></h2>
+            <p class="sec-sub">Live products built for real clients</p>
+        </div>
+        <div class="freelance-grid">
+            <div class="fl-card up">
+                <div class="fl-img-wrap">
+                    <img src="freelance1.png" alt="TalesFM" loading="lazy">
+                    <div class="fl-overlay"></div>
+                    <span class="fl-badge">Live</span>
+                </div>
+                <div class="fl-body">
+                    <div class="fl-title">TalesFM</div>
+                    <div class="fl-desc">TalesFM streams live radio with digital tools, enabling seamless listening for broadcasters and transforming radio into an interactive experience.</div>
+                    <a href="https://talesfm.com/" class="fl-link" target="_blank">Visit Site &rarr;</a>
+                </div>
+            </div>
+
+            <div class="fl-card up">
+                <div class="fl-img-wrap">
+                    <img src="freelance2.png" alt="Traverse VPN" loading="lazy">
+                    <div class="fl-overlay"></div>
+                    <span class="fl-badge">Live</span>
+                </div>
+                <div class="fl-body">
+                    <div class="fl-title">Traverse VPN</div>
+                    <div class="fl-desc">Stay secure online with Traverse VPN — a fast and reliable VPN powered by a custom WireGuard protocol. Protects your privacy without slowing you down.</div>
+                    <a href="https://traversevpn.com/" class="fl-link" target="_blank">Visit Site &rarr;</a>
+                </div>
+            </div>
+
+            <div class="fl-card up">
+                <div class="fl-img-wrap">
+                    <img src="freelance3.png" alt="Qyuro AI" loading="lazy">
+                    <div class="fl-overlay"></div>
+                    <span class="fl-badge">Live</span>
+                </div>
+                <div class="fl-body">
+                    <div class="fl-title">Qyuro.City</div>
+                    <div class="fl-desc">Qyuro is an all-in-one AI assistant built to handle everything in one place — from everyday questions to creative and productivity tasks. Simple, fast, and adaptive.</div>
+                    <a href="https://qyuro.ai/" class="fl-link" target="_blank">Visit Site &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pips" style="background:var(--bg)">
+        <div class="pip"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
+    </div>
 
     <!-- ════════ PROJECTS ════════ -->
     <section id="projects">
         <div class="sec-head">
-            <div class="sec-tag">04 &mdash; Projects</div>
+            <div class="sec-tag">05 &mdash; Projects</div>
             <h2 class="sec-title">Featured <span>Work</span></h2>
             <p class="sec-sub">Hover a card to reveal details</p>
         </div>
@@ -1831,7 +2013,7 @@
             <div class="proj p1 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">01 / 03</div>
+                        <div class="proj-num">01 / 05</div>
                         <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--red)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🏆</div>
                         <div class="proj-title">CodeX Leaderboard</div>
                         <div class="proj-tags"><span class="ptag" style="color:var(--red);border-color:var(--red)">Node.js</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Prisma</span><span class="ptag" style="color:#aaa;border-color:#aaa">AI</span></div>
@@ -1846,7 +2028,7 @@
             <div class="proj p2 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">02 / 03</div>
+                        <div class="proj-num">02 / 05</div>
                         <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--orange)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">✏️</div>
                         <div class="proj-title">Scribble Backend</div>
                         <div class="proj-tags"><span class="ptag" style="color:var(--orange);border-color:var(--orange)">Socket.IO</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Real-Time</span></div>
@@ -1861,7 +2043,7 @@
             <div class="proj p3 up">
                 <div class="proj-inner">
                     <div class="proj-f">
-                        <div class="proj-num">03 / 03</div>
+                        <div class="proj-num">03 / 05</div>
                         <div class="proj-ico" style="background: linear-gradient(135deg, #111, var(--green)); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🏥</div>
                         <div class="proj-title">Swastikonix</div>
                         <div class="proj-tags"><span class="ptag" style="color:var(--green);border-color:var(--green)">Full Stack</span><span class="ptag" style="color:var(--blue);border-color:var(--blue)">Healthcare</span></div>
@@ -1872,10 +2054,44 @@
                     </div>
                 </div>
             </div>
+
+            <div class="proj p7 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">04 / 05</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, #00c8aa); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🏨</div>
+                        <div class="proj-title">Medzillo HMS</div>
+                        <div class="proj-tags"><span class="ptag" style="color:#00c8aa;border-color:#00c8aa">Node.js</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">MongoDB</span><span class="ptag" style="color:var(--blue);border-color:var(--blue)">Healthcare</span></div>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">Hospital Management System with real-time patient tracking, appointment scheduling, and secure medical records management.</div>
+                        <a href="https://medzillo.in" class="proj-link" target="_blank">View Live &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj p8 up">
+                <div class="proj-inner">
+                    <div class="proj-f">
+                        <div class="proj-num">05 / 05</div>
+                        <div class="proj-ico" style="background: linear-gradient(135deg, #111, #9b59b6); border-radius: 12px; height: 120px; width: 100%; margin-bottom: 12px; display:flex; align-items:center; justify-content:center; font-size:3rem;">🚀</div>
+                        <div class="proj-title">NF3Pro</div>
+                        <div class="proj-tags"><span class="ptag" style="color:#9b59b6;border-color:#9b59b6">Full Stack</span><span class="ptag" style="color:var(--yellow);border-color:var(--yellow)">Platform</span></div>
+                    </div>
+                    <div class="proj-bk">
+                        <div class="proj-desc">Professional platform with scalable backend infrastructure, optimized API design, and seamless user experience.</div>
+                        <a href="https://nf3pro.com" class="proj-link" target="_blank">View Live &rarr;</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+
     <div class="pips" style="background:var(--bg)">
+        <div class="pip"></div>
+        <div class="pip"></div>
+        <div class="pip"></div>
         <div class="pip"></div>
         <div class="pip"></div>
         <div class="pip"></div>
@@ -1884,7 +2100,7 @@
     <!-- ════════ CONTACT ════════ -->
     <section id="contact">
         <div class="sec-head">
-            <div class="sec-tag">05 &mdash; Contact</div>
+            <div class="sec-tag">06 &mdash; Contact</div>
             <h2 class="sec-title">Let's <span>Connect</span></h2>
             <p class="sec-sub">Have a project? Let's solve it together.</p>
         </div>
